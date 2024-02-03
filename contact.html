@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./dist/css/hamburger.css"> -->
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+
+    <header class="headerWrapper">
+    <div class="headerLogo">
+        <a class="headerLogo__img" href="#" title="Parki FOREST">
+            <img src="./dist/img/logo.svg" alt="logo firmy" itemprop="logo"
+                class="headerLogo__img" /><span>FOREST</span>
+        </a>
+
+    </div>
+
+
+
+    <nav class="navbox navbox--hidden">
+        <a class="navbox__item" href="#home">Home</a>
+        <a class="navbox__item" href="#aboutUs">O nas</a>
+        <a class="navbox__item" href="#offer">Oferta</a>
+        <a class="navbox__item" href="contact.html">Kontakt</a>
+    </nav>
+
+    <button class="menu"  aria-label="Main Menu">
+        <svg width="100" height="100" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+
+</header>
+<!--  -->
+
+    <section class="row row--aboutUs">
+        <div class="row__header">
+            <h1 class="row__title">Forest Group</h1>
+            <h2 class="row__subtitle">Skontaktuj się z nami</h2>
+        </div>
+    </section>
+    
+    <div class="contactContainer">
+    <form class="contact">
+        <label for "name" class="contact__label">Imię</label>      
+        <input name="name" label="Imię" type="text" class="contact__input" placeholder="Imię /  nazwa firmy" />   
+        <label for "email" class="contact__label">Adres e-mail</label>
+        <input name="email" type="email" class="contact__input" placeholder="adres e-mail" />
+        <label for "text" class="contact__label">Wiadomość</label>
+        <textarea name="text" class="contact__input" placeholder="wpisz treść swojej wiadomości"></textarea>
+        <button type="submit" class="contact__btn" >Wyślij</button>
+      </form>
+      <div class="googlemaps">
+        <iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8980500890234!2d19.89026927751004!3d50.08819561337936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1706884098720!5m2!1spl!2spl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    
+
+ 
+  
+
+
+
+    <footer class="footer">
+    <!-- <div class="grid-container footer"> -->
+    <div class="footer__logo">
+        <a class="footer__logo" href="#home" title="Parki FOREST" itemprop="logo">
+            <img src="./dist/img/logo.svg" alt="logo firmy" itemprop="logo" />
+            <span>FOREST</span></a>
+
+    </div>
+    <nav class="footer__navContainer">
+        <div class="footer__navbox">
+            <h2 class="footer__navHeader">O nas</h2>
+            <ul>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Historia</a></li>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Parki</a></li>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Opinie</a></li>
+            </ul>
+        </div>
+        <div class="footer__navbox">
+            <h2 class="footer__navHeader">Nasza firma</h2>
+            <ul>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Praca</a></li>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Kadry</a></li>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Zarząd</a></li>
+            </ul>
+        </div>
+        <div class="footer__navbox">
+            <h2 class="footer__navHeader">Dokumenty</h2>
+            <ul>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Wnioski</a></li>
+                <li class="footer__navList"><a class="footer__navItem" href="#">Rezerwacje</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- </div> -->
+</footer>
+
+    <script src="./src/js/main.js"> </script>
+</body>
+
+</html>

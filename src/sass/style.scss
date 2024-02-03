@@ -1,0 +1,133 @@
+@use './reset' as *;
+@use './colors' as *;
+@use './navigation' as *;
+@use './offerCards' as *;
+@use './footer' as *;
+@use './contact' as *;
+@use './otheroffers' as *;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row {
+	display: flex;
+
+	justify-content: space-around;
+	background-size: cover;
+	background-position: center;
+	color: $pageBGColor;
+	text-shadow: 2px 2px 7px black;
+	&__header {
+		padding: 8rem 4rem;
+	}
+	&__title {
+		font-size: 2rem;
+		text-align: left;
+	}
+	&__subtitle {
+		font-size: 2.5rem;
+		&--center {
+			text-align: center;
+			padding: 2rem;
+			border: solid 1px white;
+		}
+	}
+	&--aboutUs {
+		background-image: url('/dist/img/jungle.jpg');
+	}
+	&--adventure {
+		background-image: url('/dist/img/girl.jpg');
+	}
+}
+.content {
+	padding-bottom: 2rem;;
+	&__title {
+		padding-top: 3rem;
+		font-size: 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		&--small {
+			padding: 0;
+			font-size: 1.5rem;
+			text-transform: none;
+		}
+	}
+}
+.contentArea {
+	padding: 1rem;
+	&__text {
+		padding: 2rem 0;
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+		&--header {
+			font-size: 2rem;
+		}
+	}
+	&__img {
+		width: 100%;
+	}
+}
+
+.otherOffer-btn {
+	display: block;
+	margin: auto;
+	padding: 2rem 4rem;
+	border-radius: 1rem;
+	border: solid 1px $accentColor;
+	box-shadow: 1px 1px 6px $accentColor;
+	transition: background-color 1s;
+&:hover{
+	cursor: pointer;
+	background-color: $accentColor;
+}
+	
+}
+.otherOffer-txt {
+	text-align: center;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+	.offerSection {
+		display: flex;
+
+		justify-content: center;
+	}
+
+	.content {
+		
+		padding-bottom: 2rem;
+	}
+	.contentArea {
+		display: flex;
+		flex-direction: row;
+		&__text {
+			padding: 0 2rem;
+			&--header {
+				padding: 1rem 2rem;
+			}
+		}
+		&__img {
+			width: 50%;
+			object-fit: contain;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.wrapper {
+		width: 70%;
+		margin: auto;
+	}
+}
+.row {
+	&__header {
+		width: 70%;
+	}
+}

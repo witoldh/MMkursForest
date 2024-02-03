@@ -1,0 +1,100 @@
+@use './colors' as *;
+
+
+
+.footer {
+	display: flex;
+	flex-direction: column-reverse;
+	
+	// flex-wrap: nowrap;
+	align-items: center;
+	padding-top: 2rem;
+	background-color: $footerBGColor;
+
+	&__logo {
+		padding-top: 2rem;
+		color: $logoColor;
+		text-decoration: none;
+		font-size: 2rem;
+		img {
+			max-height: 3rem;
+			text-decoration: none;
+			
+		}
+	}
+	&__firmName {
+		display: inline-block;
+		font-size: 3rem;
+	}
+
+	&__navbox {
+		width: 100%;
+		padding-top: 1.5rem;
+		text-align: center;
+	}
+
+	&__navList {
+		padding-top: 1rem;
+		font-size: 1.4rem;
+	}
+	&__navHeader {
+		font-size: 1.5rem;
+	}
+	&__navItem {
+		color: $accentColor;
+		text-decoration: none;
+		&:hover{
+			
+			padding: .5rem;
+			border-radius: .5rem;
+			background-color: $accentColor;
+			color: $footerBGColor;
+			
+			transition: color, 1s;
+			transition: background-color, 1s;
+			
+		}
+	}
+
+}
+
+@media screen and (min-width: 576px)  and (max-width: 768px) {
+	.footer {
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		&__logo {
+			padding-top: 1rem;
+			width: 100%;
+			text-align: center;
+		}
+		&__navContainer {
+			display: flex;
+			width:100%;
+			padding-bottom: 2rem;
+			justify-content: space-around;
+			
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.footer {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: normal;
+		
+		&__logo {
+			padding-top: 1rem;
+			width: 30%;
+			text-align: center;
+		}
+		&__navContainer {
+			display: flex;
+			width:70%;
+			padding-bottom: 2rem;
+			justify-content: space-around;
+			
+		}
+	}
+}
