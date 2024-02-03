@@ -537,10 +537,10 @@ body {
   border: solid 1px white;
 }
 .row--aboutUs {
-  background-image: url("/dist/img/jungle.jpg");
+  background-image: url("../img/jungle.jpg");
 }
 .row--adventure {
-  background-image: url("/dist/img/girl.jpg");
+  background-image: url("../img/girl.jpg");
 }
 
 .content {
