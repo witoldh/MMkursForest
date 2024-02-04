@@ -537,10 +537,10 @@ body {
   border: solid 1px white;
 }
 .row--aboutUs {
-  background-image: url("../img/jungle.jpg");
+  background-image: url("../img/jungle480.jpg");
 }
 .row--adventure {
-  background-image: url("../img/girl.jpg");
+  background-image: url("../img/girl480.jpg");
 }
 
 .content {
@@ -570,7 +570,7 @@ body {
   font-size: 2rem;
 }
 .contentArea__img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .otherOffer-btn {
@@ -594,6 +594,12 @@ body {
 }
 
 @media screen and (min-width: 769px) {
+  .row--aboutUs {
+    background-image: url("../img/jungle960.jpg");
+  }
+  .row--adventure {
+    background-image: url("../img/girl960.jpg");
+  }
   .offerSection {
     display: flex;
     justify-content: center;
@@ -612,7 +618,7 @@ body {
     padding: 1rem 2rem;
   }
   .contentArea__img {
-    width: 50%;
+    max-width: 50%;
     object-fit: contain;
   }
 }
@@ -624,4 +630,10 @@ body {
 }
 .row__header {
   width: 70%;
+}
+.row--aboutUs {
+  background-image: url("../img/jungle.jpg");
+}
+.row--adventure {
+  background-image: url("../img/girl.jpg");
 }

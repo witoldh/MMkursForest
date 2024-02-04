@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dcterms.description" lang="pl" content="parki Forest Group">
+    <meta name="dcterms.subject" lang="pl" content="parki; forest group;">
     <title>FOREST GROUP</title>
     <!-- <link rel="stylesheet" href="./dist/css/hamburger.css"> -->
     <link rel="stylesheet" href="./dist/css/style.min.css">
@@ -25,7 +27,14 @@
         <h2 class="content__title">O nas</h2>
         <div class="wrapper">
             <div class="contentArea">
-                <img class="contentArea__img" src="./dist/img/waters.jpg" alt="wyspa na jeziorze">
+                <!-- <img class="contentArea__img" src="./dist/img/waters.jpg" alt="wyspa na jeziorze"> -->
+                <picture class="contentArea__img">
+                    <source srcset="./dist/img/waters.jpg" media="(min-width: 1200px)" />
+                    <source srcset="./dist/img/waters600x400.jpg" media="(min-width: 769px)" />
+                    
+                    <img class="contentArea__img" src="./dist/img/waters300x200.jpg" alt="wyspa na jeziorze" />
+                  </picture>
+                  
 
                 <div class="contentArea__text">
                     <h3 class="contentArea__text--header">Niezapomniane przygody</h3>
@@ -51,13 +60,13 @@
     <section class="content" id="offer">
         <h2 class="content__title">Oferta</h2>
         <p class="content__title content__title--small">Wybierz jedną z naszych wspaniałych ofert</p>
-        
+
         <div class="offerSection">
             <!-- @include 'offerCard.kit'-->
 
         </div>
         <p class="otherOffer-txt">Sprawdź inne atrakcyjne pakiety:</p>
-        <button class="otherOffer-btn" href="offer.html">Sprawdź inne oferty</button>
+        <button class="otherOffer-btn" href="otheroffers.html">Sprawdź inne oferty</button>
     </section>
 
 
