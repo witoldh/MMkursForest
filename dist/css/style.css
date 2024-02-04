@@ -545,11 +545,11 @@ body {
 
 .content {
   padding-bottom: 2rem;
+  text-align: center;
 }
 .content__title {
   padding-top: 3rem;
   font-size: 2rem;
-  text-align: center;
   text-transform: uppercase;
 }
 .content__title--small {
@@ -574,9 +574,7 @@ body {
 }
 
 .otherOffer-btn {
-  display: block;
-  margin: auto;
-  padding: 2rem 4rem;
+  padding: 1rem 3rem;
   border-radius: 1rem;
   border: solid 1px #28dd72;
   box-shadow: 1px 1px 6px #28dd72;
@@ -588,7 +586,7 @@ body {
 }
 
 .otherOffer-txt {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
