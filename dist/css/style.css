@@ -476,8 +476,8 @@ img {
   border: 1px solid gray;
   border-radius: 1rem;
   color: darkgray;
-  padding: 1rem;
   font-size: 1.5rem;
+  padding: 1rem;
   text-transform: uppercase;
   transition: color 0.5s;
 }
@@ -499,10 +499,10 @@ img {
 }
 @media screen and (min-width: 992px) {
   .cards {
+    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     min-width: 992px;
     max-width: 72%;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 html {
@@ -588,8 +588,8 @@ body {
 }
 
 .otherOffer-txt {
-  text-align: center;
   padding-bottom: 1rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -627,13 +627,13 @@ body {
     width: 70%;
     margin: auto;
   }
-}
-.row__header {
-  width: 70%;
-}
-.row--aboutUs {
-  background-image: url("../img/jungle.jpg");
-}
-.row--adventure {
-  background-image: url("../img/girl.jpg");
+  .row__header {
+    width: 70%;
+  }
+  .row--aboutUs {
+    background-image: url("../img/jungle.jpg");
+  }
+  .row--adventure {
+    background-image: url("../img/girl.jpg");
+  }
 }
